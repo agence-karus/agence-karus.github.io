@@ -20,6 +20,10 @@
    * colors
    */
 
+  --karus-blue-dark: hsl(208, 56%, 13%);
+  --karus-grey-blue: hsl(215, 26%, 23%);
+  --karus-grey-blue-light: hsl(206, 26%, 27%);
+  --karus-red: hsl(359, 84%, 45%);
   --sefety-orange_10: hsla(24, 100%, 50%, 0.1);
   --sefety-orange: hsl(24, 100%, 50%);
   --sonic-silver: hsl(220, 1%, 48%);
@@ -38,7 +42,7 @@
    * typography
    */
 
-  --ff-jost: 'Jost', sans-serif;
+  --ff-raleway: 'Raleway', sans-serif;
 
   --fs-1: 3.8rem;
   --fs-2: 2.2rem;
@@ -122,7 +126,7 @@ button {
 ion-icon { pointer-events: none; }
 
 html {
-  font-family: var(--ff-jost);
+  font-family: var(--ff-raleway);
   font-size: 10px;
   scroll-behavior: smooth;
 }
@@ -178,7 +182,7 @@ body.active { overflow: hidden; }
 
 .section-title .span {
   display: inline-block;
-  color: var(--sefety-orange);
+  color: var(--karus-red);
 }
 
 .section-text { font-size: var(--fs-3); }
@@ -193,32 +197,32 @@ body.active { overflow: hidden; }
 }
 
 .btn-primary {
-  --bg: var(--sefety-orange);
+  --bg: var(--karus-red);
   --color: var(--white);
-  --border-color: var(--sefety-orange);
+  --border-color: var(--karus-red);
 }
 
 .btn-primary:is(:hover, :focus) {
   --bg: transparent;
-  --color: var(--sefety-orange);
+  --color: var(--karus-red);
 }
 
 .btn-secondary:is(:hover, :focus) {
-  --bg: var(--sefety-orange);
-  --border-color: var(--sefety-orange);
+  --bg: var(--karus-red);
+  --border-color: var(--karus-red);
 }
 
 .btn-outline {
   --bg: transparent;
-  --color: var(--sefety-orange);
-  --border-color: var(--sefety-orange);
+  --color: var(--karus-red);
+  --border-color: var(--karus-red);
   --padding: 10px 28px;
   font-weight: var(--fw-500);
 }
 
 .btn-outline:is(:hover, :focus) {
   --color: var(--white);
-  --bg: var(--sefety-orange);
+  --bg: var(--karus-red);
 }
 
 .has-shape {
@@ -258,7 +262,7 @@ body.active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
-.btn-link:is(:hover, :focus) { color: var(--sefety-orange); }
+.btn-link:is(:hover, :focus) { color: var(--karus-red); }
 
 .img-holder {
   aspect-ratio: var(--width) / var(--height);
@@ -335,7 +339,7 @@ body.active { overflow: hidden; }
 .nav-open-btn ion-icon { --ionicon-stroke-width: 50px; }
 
 .nav-open-btn:is(:hover, :focus) {
-  background-color: var(--sefety-orange);
+  background-color: var(--karus-red);
   color: var(--white);
 }
 
@@ -373,7 +377,7 @@ body.active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover, :focus) { color: var(--sefety-orange); }
+.navbar-link:is(:hover, :focus) { color: var(--karus-red); }
 
 .overlay {
   position: fixed;
@@ -443,7 +447,7 @@ body.active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
-.service-card .card-title:is(:hover, :focus) { color: var(--sefety-orange); }
+.service-card .card-title:is(:hover, :focus) { color: var(--karus-red); }
 
 .service .shape-2 { display: none; }
 
@@ -527,8 +531,8 @@ body.active { overflow: hidden; }
 }
 
 .project-card .card-link:is(:hover, :focus) {
-  background-color: var(--sefety-orange_10);
-  color: var(--sefety-orange);
+  background-color: var(--karus-red);
+  color: var(--karus-red);
 }
 
 
@@ -563,7 +567,7 @@ body.active { overflow: hidden; }
 }
 
 .blog-card .card-tag:is(:hover, :focus) {
-  background-color: var(--sefety-orange);
+  background-color: var(--karus-red);
   color: var(--white);
 }
 
@@ -610,7 +614,7 @@ body.active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
-.footer-link:is(:hover, :focus) { color: var(--sefety-orange); }
+.footer-link:is(:hover, :focus) { color: var(--karus-red); }
 
 .footer-brand .footer-link:not(:last-of-type) { margin-block: 30px 15px; }
 
@@ -625,7 +629,7 @@ body.active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
-.social-link:is(:hover, :focus) { color: var(--sefety-orange); }
+.social-link:is(:hover, :focus) { color: var(--karus-red); }
 
 .footer-list .footer-link { padding-block: 5px; }
 
