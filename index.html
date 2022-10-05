@@ -192,24 +192,7 @@ title: Agence Karus
               qui fera de vos outils numériques un véritable atout concurrentiel.
             </p>
 
-            <!-- Google Calendar Appointment Scheduling begin -->
-            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-            <script>
-              (function () {
-                var target = document.currentScript;
-                window.addEventListener('load', function () {
-                  calendar.schedulingButton.load({
-                    url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0dt6Xpwz97Hz0TcER2Qx3pph5LQLx6fnnjRrnfCYFN2GG9It_NPQOOZ3gBSTCCu6uxZR4hCYe5?gv=true',
-                    color: '#D31216',
-                    class: 'btn btn-outline',
-                    label: 'Prendre rendez-vous',
-                    target,
-                  });
-                });
-              })();
-            </script>
-            <!-- end Google Calendar Appointment Scheduling -->
+            {% include calendar_google.html %}
 
           </div>
 
