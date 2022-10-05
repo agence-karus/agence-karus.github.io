@@ -111,8 +111,13 @@ button,
 ion-icon { display: block; }
 
 a {
-  color: inherit;
+  color: var(--karus-blue-dark);
   text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: var(--karus-blue-dark);
+  }
 }
 
 img { height: auto; }
@@ -276,11 +281,12 @@ body.active { overflow: hidden; }
   height: 100%;
   object-fit: cover;
   transition: var(--transition-2);
+  transform: scale(1.05);
 }
 
 .hover\:underline {
   display: inline;
-  background-image: linear-gradient(to right, var(--gunmetal), var(--gunmetal));
+  background-image: linear-gradient(to right, var(--karus-blue-dark), var(--karus-blue-dark));
   background-repeat: no-repeat;
   max-width: max-content;
   background-position-y: bottom;
@@ -508,7 +514,7 @@ body.active { overflow: hidden; }
 
 .project-card .img-holder { overflow: hidden; }
 
-.project-card:is(:hover, :focus-within) .img-cover { transform: scale(1.2); }
+.project-card:is(:hover, :focus-within) .img-cover { transform: scale(1); }
 
 .project-card .card-content {
   display: flex;
@@ -535,7 +541,7 @@ body.active { overflow: hidden; }
 
 .project-card .card-link:is(:hover, :focus) {
   background-color: var(--karus-red);
-  color: var(--karus-red);
+  color: var(--snow);
 }
 
 
