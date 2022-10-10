@@ -388,6 +388,12 @@ body.active { overflow: hidden; }
 
 .navbar-link:is(:hover, :focus) { color: var(--karus-red); }
 
+@media only screen and (max-width: 600px) {
+  .nav-cta {
+    display: none;
+  }
+}
+
 .overlay {
   position: fixed;
   top: 0;
